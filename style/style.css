@@ -1,0 +1,424 @@
+/* 
+BOJE
+#FF1E00 crvena naslovi itd
+#E8F9FD belicasta pozadina svega
+#59CE8F zelena forme kutije itd
+#000000 crna ili ti tekst logyy
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Prata&display=swap');
+*{
+    font-family: 'Outfit',sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color: #000000;
+    
+}
+
+body{
+    background-color:  #E8F9FD;
+}
+
+header{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 150px;
+    height: 90px;
+    border-bottom: 0.5px solid #59CE8F;
+    background-color: #E8F9FD;
+} 
+
+.logo {
+    height: 32px;
+    max-width: 100%; 
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+
+
+.nav-link{
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color:#59CE8F;
+}
+
+.butt:hover{
+    filter: brightness(90%);
+}
+
+.butt{
+    border: none;
+    border-radius: 10px;
+    padding: 16px 25px;
+    text-align: center;
+    background-color: #ff1e00;
+}
+
+.hero1-dugme{
+    color: #f3f1ff;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+/* hero meni */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 600px;
+    overflow: visible;
+    color: #000000;
+}
+
+.hero1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 30px;
+}
+
+.hero1-tekst{
+    font-size: 4.7em;
+    font-weight:600;
+    line-height: 105%;
+}
+
+
+.hero1-dugme{
+    border: none;
+    cursor: pointer;
+}
+
+
+@keyframes slideUp{
+    from {
+      top: 600px; 
+    }
+    to {
+      top: 10px; 
+    }
+}
+
+.naslovna-pica{
+    max-width: 500px;
+    vertical-align: middle;
+    position: relative;
+    overflow: visible;
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; 
+    height: 500px;
+}
+
+/*DOBRODOSLI*/
+.dobrodosli{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.dobrodosli-naslov{
+    font-size: 30px;
+    padding-top: 40px;
+}
+.dobrodosli-tekst{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 18px;
+    align-items: center;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+
+/*ZANIMLJIVOSTI*/
+
+.zanimljivosti{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    
+}
+
+.zanimljivosti-wrap{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+
+}
+
+.zanimljivosti-sadrzaj{
+    flex: 1;
+    background-color: #59CE8F;
+    height: 200px;
+    width:200px;
+    display: grid;
+    color: #f3f1ff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+
+.zanimljivosti-tekst{
+    font-size: 20px;
+    text-align: center;
+}
+
+.zanimljivosti-broj{
+    font-size: 65px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/*meni*/
+.meni-container{
+    margin-top: 150px;
+}
+.meni-naslov{
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.meni-grupa{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.meni-stavka{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.meni-stavka-slika{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.meni-stavka-tekst{
+    flex-grow: 1;
+}
+.meni-stavka-naslov{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+
+.meni-stavka-slika{
+    width: 120px;
+    height: 120px;
+}
+
+/* footer */
+
+footer{
+    border-top: 0.5px solid #59CE8F;
+    margin-top: 30px;
+    /* position: ;
+    bottom: 0;
+    left: 0; */
+    width: 100% !important;
+}
+
+#footer-meni{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+    border-top: 0.3px solid #a5a5a5;
+}
+
+.footer-meni-sekcija{
+    display:flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-item{
+    color: #a5a5a5;
+}
+
+.footer-link:hover{
+    color:#f3f1ff;    
+}
+
+.footer-link{
+    transition: 0.7s ease;
+    text-decoration: none;
+    color: #a5a5a5;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.footer-button:hover{
+    background-color: #ff1e00; 
+}
+
+.footer-button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #59CE8F;
+}
+
+.footer-img{
+    width: 40px;
+    height:30px;
+    padding: 4px;
+    fill:#000000;
+}
+
+#footer-button-ig{
+    padding: 7px;
+}
+
+/* O autoru*/ 
+.oautoru-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+
+.oautoru-naslov{
+    font-size:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px !important;
+}
+.oautoru-grupa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+#oautoru-img{
+    max-height: 450px !important;
+    max-width: 400px !important;
+    border-radius: 20px;
+}
+.oautoru-opis{
+    font-size:20px;
+    max-width: 800px !important;
+    text-align: center;
+}
+
+/* Kontakt forma */
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.image-container img {
+width: 600px;
+height: auto;
+border-radius: 15px; 
+}
+
+.contact-form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+width: 300px;
+}
+
+.contact-form h2 {
+color: #d35400; 
+text-align: center;
+}
+
+.contact-form label {
+font-weight: bold;
+color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+padding: 10px;
+border: 2px solid #d35400;
+border-radius: 10px;
+background-color: #fdfaf6; 
+}
+
+.contact-form textarea {
+resize: none; 
+height: 100px;
+}
+
+.contact-form button {
+padding: 10px;
+background-color: #d35400; 
+color: #fff;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+font-size: 16px;
+font-weight: bold;
+}
+  
+.contact-form button:hover {
+    filter: brightness(90%);
+}
+  
